@@ -19,7 +19,7 @@ button {padding:15px 30px; font-size:16px;}
 <body>
 <div class="container">
 <h1>SCFHS Trainer Certification Exam</h1>
-<h3>Prometric Conversion Program — Items 26–50</h3>
+<h3>Prometric Conversion Program — Items 1–100</h3>
 
 <label><b>Trainer Full Name</b></label>
 <input id="name" style="width:100%; padding:10px; font-size:16px;"><br><br>
@@ -36,6 +36,106 @@ button {padding:15px 30px; font-size:16px;}
 const PASS_MARK = 0.85;
 
 const questions = [
+{q:"1. During a drill, a student asks why oxygen is correct when SpO₂ is 84%. Which explanation is permitted?",
+o:["Because hypoxia causes cellular damage","Because ABC priority requires immediate airway and breathing action","Because wording suggests urgency","Because oxygen improves oxygen saturation values"],
+a:1, auto:true, r:"Only ABC-based safety logic is permitted. Grammar, physiology, or outcome-based explanations are forbidden."},
+
+{q:"2. Which trainer statement demonstrates correct Prometric thinking?",
+o:["Which option treats the underlying cause?","Which action would you do in real practice?","Which option removes immediate safety risk first?","Which answer sounds most urgent?"],
+a:2, auto:false, r:"Prometric logic prioritizes immediate risk elimination, not causes or realism."},
+
+{q:"3. A trainer tells students, 'In real life, nurses often do this first.' This behavior is:",
+o:["Acceptable contextualization","Helpful professional insight","A violation of exam authority","Encouraging confidence"],
+a:2, auto:true, r:"Personal or real-life framing replaces exam logic with clinical authority."},
+
+{q:"4. Which reasoning must NEVER be accepted as correct?",
+o:["This delays immediate intervention","This violates ABC priority","This option is unsafe as a first action","This sentence tense implies urgency"],
+a:3, auto:true, r:"Grammar- or wording-based reasoning trains guessing behavior and invalidates the exam."},
+
+{q:"5. The trainer’s primary role during drills is to:",
+o:["Improve student understanding","Build clinical confidence","Enforce exam-safe decision behavior","Explain professional practice"],
+a:2, auto:false, r:"Trainers function as Prometric proxies, not educators."},
+
+{q:"6. Why are rationales restricted to very short statements?",
+o:["To save time","To reduce cognitive load","To prevent unsafe explanatory drift","To match screen layout"],
+a:2, auto:false, r:"Long explanations invite NCLEX-style reasoning and coaching."},
+
+{q:"7. A trainer praises a student’s reasoning even though the answer is wrong. This causes:",
+o:["Motivation","Deeper learning","Score inflation risk","No effect"],
+a:2, auto:false, r:"Correctness must align with correct logic; praising wrong answers inflates scores."},
+
+{q:"8. Which explanation is strictly forbidden?",
+o:["This is not the first action","This delays care","This exceeds nursing scope","This option sounds less urgent"],
+a:3, auto:true, r:"Urgency inferred from language cues is prohibited."},
+
+{q:"9. Allowing students to explain why distractors are tempting is:",
+o:["Insightful","Advanced teaching","Unsafe coaching","Encouraging analysis"],
+a:2, auto:false, r:"Explaining distractors trains test-taking tricks."},
+
+{q:"10. Which phrase must be corrected immediately if used by a trainer?",
+o:["Immediate safety action","Violates ABC","It depends on the situation","First nursing action"],
+a:2, auto:true, r:"Conditional logic is incompatible with Prometric safety decisions."},
+
+{q:"11. A trainer allows open discussion before answering an airway question. This is:",
+o:["Supportive for ESL learners","Encouraging engagement","A violation of timing discipline","Acceptable if corrected later"],
+a:2, auto:false, r:"Prometric enforces rapid, decisive responses."},
+
+{q:"12. A student asks for clarification of a medical term in the stem. The trainer must:",
+o:["Define the term","Rephrase the question","Redirect to action despite unclear vocabulary","Remove the item"],
+a:2, auto:false, r:"Action logic supersedes vocabulary understanding."},
+
+{q:"13. A trainer negotiates an answer because the student’s logic 'makes sense.' This is:",
+o:["Adaptive teaching","Good mentorship","Authority failure","Minor deviation"],
+a:2, auto:true, r:"Negotiation erodes exam authority and consistency."},
+
+{q:"14. Which trainer behavior preserves exam validity?",
+o:["Allowing debate","Providing hints","Enforcing immediate selection","Explaining reasoning afterward"],
+a:2, auto:false, r:"Immediate enforcement prevents coaching drift."},
+
+{q:"15. A trainer states, 'Doctors usually want this done first.' This is:",
+o:["Helpful context","Policy-based guidance","Irrelevant and unsafe","Realistic teaching"],
+a:2, auto:false, r:"Provider preferences are irrelevant to Prometric logic."},
+
+{q:"16. A cohort shows a 94% pass rate with very fast response times. The correct action is to:",
+o:["Celebrate success","Release the cohort","Audit trainer rationale behavior","Increase exam difficulty"],
+a:2, auto:false, r:"High pass + speed often indicates coaching drift."},
+
+{q:"17. Which dashboard metric most strongly signals score inflation?",
+o:["Low ESL error rate","High pass rate alone","High pass rate with compressed response time","High item difficulty"],
+a:2, auto:false, r:"Speed + accuracy suggests coached patterns."},
+
+{q:"18. A trainer overrides release rules due to confidence in the cohort. This results in:",
+o:["Leadership credit","Professional judgment","Automatic disqualification","Minor noncompliance"],
+a:2, auto:true, r:"Release authority violations are non-remediable."},
+
+{q:"19. Which statement reflects correct analytics literacy?",
+o:["Students are smart","Teaching was effective","Trainer behavior requires audit","Questions were easy"],
+a:2, auto:false, r:"Analytics assess trainer behavior, not student intelligence."},
+
+{q:"20. Ignoring dashboard red flags is:",
+o:["Trusting experience","Positive leadership","Governance failure","Minor oversight"],
+a:2, auto:false, r:"Data blindness leads to unsafe releases."},
+
+{q:"21. Which self-description indicates an unsafe trainer identity?",
+o:["Safety gatekeeper","Exam behavior calibrator","Clinical mentor","Prometric proxy"],
+a:2, auto:true, r:"Clinical mentorship contaminates exam enforcement."},
+
+{q:"22. Teaching keyword memorization strategies is:",
+o:["Efficient","Helpful for ESL","Prohibited coaching","Smart preparation"],
+a:2, auto:true, r:"Memorization bypasses decision logic."},
+
+{q:"23. Allowing 'close enough' answers is:",
+o:["Encouraging","Fair","A critical violation","Supportive"],
+a:2, auto:true, r:"Prometric decisions are binary."},
+
+{q:"24. The trainer’s ultimate responsibility is to:",
+o:["Help students pass","Teach content clearly","Prevent unsafe candidate release","Improve confidence"],
+a:2, auto:false, r:"Gatekeeping overrides pedagogy."},
+
+{q:"25. A trainer who explains well but releases unsafe learners is best described as:",
+o:["Effective","Experienced","Dangerous","Successful"],
+a:2, auto:false, r:"Clear explanation does not compensate for unsafe release."},
+
 {q:"26. During a safety drill, a student suggests calling the physician first. Trainer must respond:",
 o:["Allow discussion","Explain ABC priority","Agree if logic is sound","Debate the scenario"],
 a:1, auto:true, r:"Immediate ABC safety actions must be prioritized; physician notification is secondary."},
